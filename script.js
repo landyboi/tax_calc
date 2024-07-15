@@ -175,7 +175,7 @@ $(document).ready(function() {
                     if (currentCO2 === 360) { var taxRate = 50; } // If CO2 == 360 >> taxRate = 50
 
                     // Informations from JSON file (CO2TAX.json)
-                    $.getJSON('JSON/CO2TAX.json?v20211217', function(data) {
+                    $.getJSON('JSON/CO2TAX.json', function(data) {
                         var arr = [];
                         $.each(data[year], function (index, x){ arr.push(x); });
                         
