@@ -1,0 +1,128 @@
+body {
+    background-color: #FFF;
+}
+
+/**/
+
+div#tax_calculator h1 {
+    background-color: #050b7f;
+    color: white;
+    padding: 5px;
+    margin: 15px 0 15px 0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+div#tax_calculator h2 {
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/**/
+
+div#tax_calculator {
+    margin-bottom: 20px;
+    /*max-width: 90%!important;*/
+}
+
+div#tax_calculator div#intro {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0 25px 0;
+}
+
+div#tax_calculator div.tax_block {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+div#tax_calculator div.tax_block form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+div#tax_calculator div.tax_block form select {
+    margin: 10px 0;
+}
+
+div#tax_calculator div.tax_block form button.add {
+    margin: 10px 0;
+    color: #a5a5a5;
+}
+
+div#tax_calculator div.tax_blue_block {
+    background-color: #4391ff;
+    color: white;
+}
+
+div#tax_calculator div.tax_dark_blue_block {
+    background-color: #050b7f;
+    color: white;
+}
+
+div#tax_calculator div.tax_gray_block {
+    background-color: #0bcbfb;
+    color: #050b7f;
+}
+
+div#tax_calculator div#total_tax_and_price {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+div#tax_calculator div#vehicle_informations {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+div#tax_calculator div#benefits {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/*div#tax_calculator div#options input, div#tax_calculator div#accessories input {
+    margin: 5px 0;
+}*/
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/**/
+
+/* Small device */
+
+@media screen and (max-width: 640px) {
+    
+    div#tax_calculator h1 {
+        font-size: 18px;
+    }
+    
+    div#tax_calculator h2 {
+        font-size: 16px;
+    }
+    
+    div#tax_calculator div.tax_block {
+        font-size: 13px;
+    }
+    
+    div#tax_calculator div#total_tax_and_price, div#tax_calculator div#vehicle_informations, div#tax_calculator div#benefits {
+        font-size:  15px;
+    }
+
+}

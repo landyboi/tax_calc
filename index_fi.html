@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ALD AUTOMOTIVE - AUTOEDUN VEROTUSARVOLASKURI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid" id="tax_calculator">
+  <div class="row">
+        <h1>AUTOEDUN VEROTUSARVOLASKURI</h1>
+        <div class="col" id="intro">Tämän laskurin avulla voit laskea oman leasingautosi kustannukset. Laskuri antaa sinulle tiedot vapaasta autoedusta ja käyttöedusta, kun täytät alla olevat pakolliset kentät ja lisäät mahdolliset muut tiedot. Auton verotusarvo määräytyy ajoneuvon rekisteröintihetkenä voimassa olleen maahantuojan antaman yleisen suositushinnan mukaan.</div>
+  </div>
+    
+  <div class="row">
+      <div class="col-md tax_block tax_blue_block mr-md-3">
+          <h2>VALITSE AUTO</h2>
+          <p>Valitse haluamasi automerkki ja malli alla olevista valikoista.<br /><br /><br /></p>
+          <form>
+            <select id="make" class="form-control form-control-sm"><option selected>Merkki</option></select>
+            <select id="models" class="form-control form-control-sm"><option selected>Malli</option></select>
+            <select id="descriptions" class="form-control form-control-sm d-none"><option selected>Mallitarkenne</option></select>
+          </form>
+      </div>
+      <div class="col-md tax_block tax_blue_block">
+          <h2>AUTOETU JA KOKONAISHINTA</h2>
+          <p>Alta näet valitsemasi auton ja siihen lisättyjen varusteiden ja tarvikkeiden yhteenlasketun arvon, sekä siihen perustuvan verotusarvon vapaalle autoedulle ja käyttöedulle.</p>
+              <div id="total_tax_and_price">
+                  <div class="float-left">Autoveron kokonaismäärä</div>
+                  <div id="total_tax" class="float-right">--- €</div>
+                  <div class="clearfix"></div>
+                  <div class="float-left">Autoverollinen hinta varusteineen</div>
+                  <div id="total_price" class="float-right">--- €</div>
+                  <div class="clearfix"></div>
+              </div>
+      </div>
+    </div>
+    
+  <div class="row"> 
+      <div class="col-md tax_block tax_dark_blue_block mr-md-3">
+          <div id="vehicle_informations">
+              <div class="float-left">Autoveroton hinta</div>
+              <div id="list_price" class="float-right">--- €&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+              <div class="clearfix"></div>
+              <div class="float-left">Co2-päästöarvo</div>
+              <div id="co2_emission" class="float-right">--- g/km</div>
+              <div class="clearfix"></div>
+          </div>
+      </div> 
+      <div class="col-md tax_block tax_dark_blue_block">
+          <div id="benefits">
+              <div class="float-left">Vapaa autoetu</div>
+              <div id="unlimited_benefit" class="float-right">--- €</div>
+              <div class="clearfix"></div>
+              <div class="float-left">Käyttöetu</div>
+              <div id="limited_benefit" class="float-right">--- €</div>
+              <div class="clearfix"></div>
+          </div>
+      </div>      
+    </div>
+    
+  <div class="row">
+      <div class="col-md tax_block tax_gray_block mt-3 mr-md-3">
+          <h2>LISÄVARUSTEET</h2>
+          <p>Lisää haluamasi tehdasasenteiset lisävarusteet. Voit lisätä useita. Merkitse hinta ilman autoveroa, mutta sisältäen alv.<br /><br /><br /></p>
+          <form onsubmit="return false;">
+              <button type="button" class="btn btn-light btn-block add" id="add_option_button"><span class="float-left">Lisää varuste</span><span class="float-right"><img src="plus.png"></span></button>
+              <div id="options"></div>
+          </form>
+      </div>
+      <div class="col-md tax_block tax_gray_block mt-3">
+          <h2>TARVIKKEET</h2>
+          <p>Lisää haluamasi jälkiasenteiset lisävarusteet ja tarvikkeet, esim. lohkolämmitin ja sisäpistoke. Älä lisää talvirenkaita tai toimituskuluja, sillä ne eivät vaikuta verotusarvoosi. Merkitse hinta sisältäen alv.</p>
+          <form onsubmit="return false;">
+              <button type="button" class="btn btn-light btn-block add" id="add_accessory_button"><span class="float-left">Lisää tarvike</span><span class="float-right"><img src="plus.png"></span></button>
+              <div id="accessories"></div>
+          </form>
+      </div>
+    </div>
+    
+</div>
+<script type="text/javascript">var lng = 'fi';</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
